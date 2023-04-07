@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* body {
+  font-family: "main-font";
+} */
+
+@layer components {
+  .header-left-button {
+    @apply px-2  rounded-md cursor-pointer;
+  }
+
+  .header-nav-text {
+    @apply mr-5 hover:text-gray-900;
+  }
+}

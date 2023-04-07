@@ -1,17 +1,17 @@
 import React from "react";
 import Image from "next/image";
-import image2 from "/images/image2.png";
+import interior1 from "/images/interior1.jpeg";
 import image3 from "/images/image3.png";
 import image4 from "/images/image4.png";
 import image5 from "/images/image5.png";
 
 const ImageDetail = () => {
   return (
-    <section class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto">
+    <section class="text-gray-600 body-font bg-blue-200">
+      <div class="container mx-auto ">
         <div class="flex flex-col text-center w-full mb-20">
           <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-            병원 갤러리 영역
+            병원 갤러리 영역저기여?
           </h1>
           <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
             Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
@@ -19,143 +19,16 @@ const ImageDetail = () => {
             haven't heard of them man bun deep jianbing selfies heirloom.
           </p>
         </div>
-        <div class="flex flex-wrap -m-4">
-          <div class="lg:w-1/3 sm:w-1/2 p-4">
-            <div class="flex relative">
+        <div class="flex -m-4">
+          <div class="w-1/2 p-4">
+            <div class="flex">
               <Image
                 alt="gallery"
-                class="absolute inset-0 w-full h-full object-cover object-center"
-                src={image2}
-                width={100}
-                height={100}
+                class=" w-full h-full object-cover object-center"
+                src={interior1}
+                width={400}
+                height={400}
               />
-              <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                  THE SUBTITLE
-                </h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                  Shooting Stars
-                </h1>
-                <p class="leading-relaxed">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="lg:w-1/3 sm:w-1/2 p-4">
-            <div class="flex relative">
-              <Image
-                alt="gallery"
-                class="absolute inset-0 w-full h-full object-cover object-center"
-                src={image3}
-                width={100}
-                height={100}
-              />
-              <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                  THE SUBTITLE
-                </h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                  The Catalyzer
-                </h1>
-                <p class="leading-relaxed">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="lg:w-1/3 sm:w-1/2 p-4">
-            <div class="flex relative">
-              <Image
-                alt="gallery"
-                class="absolute inset-0 w-full h-full object-cover object-center"
-                src={image4}
-                width={100}
-                height={100}
-              />
-              <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                  THE SUBTITLE
-                </h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                  The 400 Blows
-                </h1>
-                <p class="leading-relaxed">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="lg:w-1/3 sm:w-1/2 p-4">
-            <div class="flex relative">
-              <Image
-                alt="gallery"
-                class="absolute inset-0 w-full h-full object-cover object-center"
-                src={image5}
-                width={100}
-                height={100}
-              />
-              <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                  THE SUBTITLE
-                </h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                  Neptune
-                </h1>
-                <p class="leading-relaxed">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="lg:w-1/3 sm:w-1/2 p-4">
-            <div class="flex relative">
-              <Image
-                alt="gallery"
-                class="absolute inset-0 w-full h-full object-cover object-center"
-                src={image2}
-                width={100}
-                height={100}
-              />
-              <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                  THE SUBTITLE
-                </h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                  Holden Caulfield
-                </h1>
-                <p class="leading-relaxed">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="lg:w-1/3 sm:w-1/2 p-4">
-            <div class="flex relative">
-              <Image
-                alt="gallery"
-                class="absolute inset-0 w-full h-full object-cover object-center"
-                src={image3}
-                width={100}
-                height={100}
-              />
-              <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                  THE SUBTITLE
-                </h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                  Alper Kamu
-                </h1>
-                <p class="leading-relaxed">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
-                </p>
-              </div>
             </div>
           </div>
         </div>

@@ -1,27 +1,41 @@
 import Head from "next/head";
 import HeadComponent from "@/components/Layout/HeadComponent";
-
 import ImageDetail from "@/components/imageDetail";
 import MainIntroduce from "@/components/MainIntroduce";
 import HospitalIntroduce from "@/components/HospitalIntroduce";
 import Contact from "@/components/Contact";
 import HospitalDetailIntroduce from "@/components/HospitalDetailIntroduce";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <Head>
-        <title>DaddyHomePage</title>
+        <title>천지인 한의원</title>
       </Head>
       <main>
         {/* 네비게이션 */}
         <HeadComponent />
         {/* 메인 첫화면 */}
-        <MainIntroduce />
+        <div>
+          <MainIntroduce />
+        </div>
+
         {/* 병원 소개 */}
-        <HospitalIntroduce />
+        <div data-aos="fade-up">
+          <HospitalIntroduce />
+        </div>
+
         {/* 갤러리 */}
-        <ImageDetail />
+        <div data-aos="fade-right">
+          <ImageDetail />
+        </div>
+
         {/* 연락처 */}
         <Contact />
         {/* 병원 디테일 소개 이미지 */}
