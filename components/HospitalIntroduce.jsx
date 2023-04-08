@@ -12,7 +12,10 @@ const HospitalIntroduce = () => {
     });
   }, []);
   return (
-    <div className="flex items-stretch  mt-3  h-screen">
+    <div
+      className="flex items-stretch mt-[10%]
+    h-screen"
+    >
       <div className="pl-[5%] flex items-center justify-center ">
         <Image
           src={introduce}
@@ -22,16 +25,16 @@ const HospitalIntroduce = () => {
           alt="mainPhoto"
         />
       </div>
-      <div className="flex items-center justify-end w-[60%] bg-mainbg bg-cover">
+      <div className="flex items-center justify-end w-[60%] bg-introduceBg bg-cover">
         <div
           data-aos="fade-up"
           className="
-          text-white
-            bg-[#E8C37D] rounded-xl bg-opacity-70 p-2 flex w-[80%] items-end justify-end"
+          text-brandbrown100 py-5
+            bg-white rounded-xl bg-opacity-90 flex w-[80%] items-end justify-end"
         >
           <div>
-            <div className="p-5">
-              <h3 className="text-xl pb-10 pt-5">한의원 소개</h3>
+            <div className=" ">
+              <h3 className="text-xl pt-5">한의원 소개</h3>
               <p className="pb-5">
                 방문해주셔서 감사합니다. <br />★ 천지인한의원(구,홍석한의원) ★
                 <br />

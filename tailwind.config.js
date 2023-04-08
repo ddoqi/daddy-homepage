@@ -33,6 +33,7 @@ module.exports = {
       },
       backgroundImage: {
         mainbg: "url('../images/secondBG.jpeg')",
+        introduceBg: "url('../images/outsidePhoto.jpeg')",
       },
     },
   },

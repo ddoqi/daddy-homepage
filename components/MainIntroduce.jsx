@@ -11,7 +11,7 @@ const MainIntroduce = () => {
 "
     >
       <div
-        data-aos="fade-up"
+        data-aos="fade"
         data-aos-delay="50"
         data-aos-duration="2000"
         className="w-full bg-[#f9cb6e] bg-opacity-80 p-5"
