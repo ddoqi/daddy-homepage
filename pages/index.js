@@ -8,6 +8,9 @@ import HospitalDetailIntroduce from "@/components/HospitalDetailIntroduce";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useRef } from "react";
+import FooterComponent from "@/components/Layout/FooterComponent";
+import DetailIntroduce from "@/components/DetailIntroduce";
+import TopButton from "@/components/Layout/TopButton";
 
 export default function Home() {
   useEffect(() => {
@@ -44,6 +47,10 @@ export default function Home() {
           <HospitalIntroduce />
         </div>
 
+        <div>
+          <DetailIntroduce />
+        </div>
+
         {/* 갤러리 */}
         <div ref={galleryRef}>
           <ImageDetail />
@@ -58,6 +65,8 @@ export default function Home() {
         <div ref={departmentRef}>
           <HospitalDetailIntroduce />
         </div>
+        <TopButton />
+        <FooterComponent />
       </main>
     </>
   );

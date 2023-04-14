@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
+body {
   font-family: "main-font";
-} */
+}
 
 @layer components {
   .header-left-button {
@@ -12,6 +12,6 @@
   }
 
   .header-nav-text {
-    @apply mr-5 hover:text-gray-900 text-bigbase mt-3;
+    @apply mr-5 hover:text-brandbrown100 text-bigbase mt-3 cursor-pointer;
   }
 }

@@ -18,12 +18,12 @@ const HeadComponent = ({
 
   return (
     <div>
-      <header class="p-3 text-gray-800 body-font">
+      <header class="p-3 text-gray-800 body-font lg:bg-white bg-[#FFD3B2] px-10">
         <div class="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
           <div class="flex title-font font-medium items-center text-gray-900 ">
             <Image src={logo3} alt="nope" width={200} height={150} />
           </div>
-          <nav class="md:ml-auto flex flex-wrap items-center text-[20px] text-[#FFA559] justify-center">
+          <nav class="md:ml-auto flex flex-wrap items-center text-[20px] text-white lg:text-[#FFA559] justify-center">
             <div
               class="header-nav-text"
               onClick={() => handleScrollToRef(mainRef)}

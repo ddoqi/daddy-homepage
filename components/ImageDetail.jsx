@@ -21,10 +21,10 @@ const ImageDetail = () => {
     <section class="text-gray-600 body-font mt-[10%]">
       <div class="container mx-auto ">
         <div class="flex flex-col text-center w-full mb-20">
-          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font lg:mb-4 text-gray-900">
             천지인 한의원
           </h1>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-bigbase pt-5">
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-bigbase pt-5 lg:block hidden">
             천지인 한의원(구. 홍석 한의원)은 다양한 치료 경험과 전문 지식을
             바탕으로 환자의 건강을 위하여 최선을 다하고 있습니다. <br /> 정확한
             진단을 통한 처방과 치료로 최상의 진료를 목표로 합니다. 한의원에서는
@@ -36,7 +36,7 @@ const ImageDetail = () => {
         </div>
         <div class="flex items-center justify-center">
           <div class="">
-            <div data-aos="fade" class="flex space-x-4">
+            <div data-aos="fade" class="lg:flex lg:space-x-4">
               <Image
                 alt="gallery"
                 class=" w-full h-full object-cover object-center"
