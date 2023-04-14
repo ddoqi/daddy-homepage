@@ -2,7 +2,20 @@ import React from "react";
 import Image from "next/image";
 import logo3 from "/images/logo3.png";
 
-const HeadComponent = () => {
+const HeadComponent = ({
+  mainRef,
+  introduceRef,
+  galleryRef,
+  operatingTimeRef,
+  departmentRef,
+}) => {
+  const handleScrollToRef = (ref) => {
+    window.scrollTo({
+      top: ref.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div>
       <header class="p-3 text-gray-800 body-font">
@@ -11,13 +24,36 @@ const HeadComponent = () => {
             <Image src={logo3} alt="nope" width={200} height={150} />
           </div>
           <nav class="md:ml-auto flex flex-wrap items-center text-[20px] text-[#FFA559] justify-center">
-            <div class="header-nav-text">Home</div>
-            <div class="header-nav-text">인사말</div>
-            <div class="header-nav-text">갤러리</div>
-            <div class="header-nav-text">연락처</div>
-            <div class="header-nav-text">진료과목</div>
-            <div class="header-nav-text">오시는길</div>
-            <div class="header-nav-text">공지사항</div>
+            <div
+              class="header-nav-text"
+              onClick={() => handleScrollToRef(mainRef)}
+            >
+              Home
+            </div>
+            <div
+              class="header-nav-text"
+              onClick={() => handleScrollToRef(introduceRef)}
+            >
+              인사말
+            </div>
+            <div
+              class="header-nav-text"
+              onClick={() => handleScrollToRef(galleryRef)}
+            >
+              갤러리
+            </div>
+            <div
+              class="header-nav-text"
+              onClick={() => handleScrollToRef(operatingTimeRef)}
+            >
+              운영시간
+            </div>
+            <div
+              class="header-nav-text"
+              onClick={() => handleScrollToRef(departmentRef)}
+            >
+              진료과목
+            </div>
           </nav>
         </div>
       </header>

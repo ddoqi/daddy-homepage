@@ -7,12 +7,19 @@ import Contact from "@/components/Contact";
 import HospitalDetailIntroduce from "@/components/HospitalDetailIntroduce";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 export default function Home() {
   useEffect(() => {
     AOS.init();
   }, []);
+
+  const mainRef = useRef(null);
+  const introduceRef = useRef(null);
+  const galleryRef = useRef(null);
+  const operatingTimeRef = useRef(null);
+  const departmentRef = useRef(null);
+
   return (
     <>
       <Head>
@@ -20,27 +27,36 @@ export default function Home() {
       </Head>
       <main>
         {/* 네비게이션 */}
-        <HeadComponent />
+        <HeadComponent
+          mainRef={mainRef}
+          introduceRef={introduceRef}
+          galleryRef={galleryRef}
+          operatingTimeRef={operatingTimeRef}
+          departmentRef={departmentRef}
+        />
         {/* 메인 첫화면 */}
-        <div>
+        <div ref={mainRef}>
           <MainIntroduce />
         </div>
 
         {/* 병원 소개 */}
-        <div data-aos="fade-up">
+        <div ref={introduceRef}>
           <HospitalIntroduce />
         </div>
 
         {/* 갤러리 */}
-        <ImageDetail />
+        <div ref={galleryRef}>
+          <ImageDetail />
+        </div>
 
         {/* 연락처 */}
-        <Contact />
+        <div ref={operatingTimeRef}>
+          <Contact />
+        </div>
+
         {/* 병원 디테일 소개 이미지 */}
-        <HospitalDetailIntroduce />
-        {/* 병원 찾기 */}
-        <div>
-          <h3>여기 병원 지도 왜이러실까</h3>
+        <div ref={departmentRef}>
+          <HospitalDetailIntroduce />
         </div>
       </main>
     </>

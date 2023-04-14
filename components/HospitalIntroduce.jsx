@@ -30,23 +30,19 @@ const HospitalIntroduce = () => {
           data-aos="fade-up"
           className="
           text-brandbrown100 py-5
-            bg-white rounded-xl bg-opacity-90 flex w-[80%] items-end justify-end"
+            bg-white rounded-xl bg-opacity-90 flex w-[60%] pl-5 items-end justify-end"
         >
           <div>
-            <div className=" ">
-              <h3 className="text-xl pt-5">한의원 소개</h3>
-              <p className="pb-5">
-                방문해주셔서 감사합니다. <br />★ 천지인한의원(구,홍석한의원) ★
-                <br />
-                "천지인한의원"은 홍석한의원에서 상호만 천지인으로
-                변경되었습니다.
-                <br /> 불편한 곳이 있다면 언제든지 오셔서 상담받으시고
+            <div className="pr-3 py-3">
+              {/* <h3 className="text-xl pt-5 pb-5">한의원 소개</h3> */}
+              <p className="pb-5 text-bigbase">
+                방문해주셔서 감사합니다. <br />
+                천지인한의원은 홍석한의원에서 상호만 천지인으로 변경되었습니다.
+                <br /> <br />
+                불편한 곳이 있다면 언제든지 오셔서 상담받으시고
                 <br />
                 적합한 치료로 건강을 챙기세요! <br />
-                모든 병은 미리 예방하거나
-                <br /> 신속한 치료가 완치 가능성을 높이고 삶의 질을 높이는
-                길입니다. <br />
-                친절한서비스와 치료로 만족을 드리기 위해 최선을 다하겠습니다.
+                친절한 서비스와 치료로 만족을 드리기 위해 최선을 다하겠습니다.
               </p>
             </div>
           </div>

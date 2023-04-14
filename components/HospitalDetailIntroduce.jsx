@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import introduction2 from "/images/introduction2.png";
+import introduce from "/images/introduce.jpeg";
 
 const HospitalDetailIntroduce = () => {
   return (
-    <div className="flex flex-col items-center">
-      <div className="m-auto">
-        <Image src={introduction2} width={760} height={600} />
+    <div className="flex flex-col items-center ">
+      <div className="mt-[10%] mb-5">
+        <div className="text-center mb-[5%] "></div>
+        <Image src={introduce} width={760} height={600} />
       </div>
     </div>
   );

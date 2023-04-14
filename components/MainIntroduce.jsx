@@ -14,14 +14,12 @@ const MainIntroduce = () => {
         data-aos="fade"
         data-aos-delay="50"
         data-aos-duration="2000"
-        className="w-full bg-[#f9cb6e] bg-opacity-80 p-5"
+        className="w-full bg-[#FFCFA9] bg-opacity-90 p-5"
       >
         <div className="flex flex-col items-center justify-center">
           <h3 className="text-5xl text-white font-bold">천지인 한의원</h3>
-          <h3 className="text-xl text-[#b8753f] font-bold">
-            ( 구. 홍석한의원 )
-          </h3>
-          <h3 className="text-center text-[21px] text-[#fffdeb] mt-5">
+          <h3 className="text-xl text-[#ac6c37] ">( 구. 홍석한의원 )</h3>
+          <h3 className="text-center text-[23px] py-2 text-white mt-5 ">
             최상의 진료를 목표로 합니다.
             <br /> 환자 중심의 진료와 친절함으로 건강을 지킵니다.
           </h3>
