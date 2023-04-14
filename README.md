@@ -2,7 +2,7 @@
 
 <br/>
 
-#### 🔗 홈페이지 링크 : [천지인 홈페이지 바로가기](https://warn-code.tistory.com/) <br/>
+#### 🔗 홈페이지 링크 : [천지인 홈페이지 바로가기](https://daddy-present-homepage.vercel.app/) <br/>
 
 <br/>
 <img src="images/readme2.jpg" alt="프로젝트 소개 이미지"/>
